@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background: rgb(244, 203, 248);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
+.container{
+    background-color: #ecdedec0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0,0,0,0.048), 0 12.8px 10.5px rgba(0,0,0,0.58) ;
+    width: 550px;
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+.header{
+    background-color: #ff477e2c;
+    padding: 0.1px;
+}
+
+.header h2{
+    font-family: 'Courier New', Courier, monospace;
+    color: #000;
+    font-size: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bolder !important;
+
+}
+
+
+.btn1{
+    background-color: #ff477e2c !important;
+    color:#000 !important;
+    padding: 6px !important;
+    border-radius: 5px!important;
+    margin-top: -20px !important;
+    margin-bottom: 10rem !important;
+    font-weight: bolder !important;
+    font-size: 18px!important;
+}
+.btn1:hover{
+    background-color: #b36a6a !important;
+}
+
+.form{
+    padding: 40px;
+}
+
+.form-control{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    width: 100%;
+    border: 2px solid #ff477e2c !important;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 12px;
+    display: block;
+}
+
+.form-control input:focus{
+    outline: 0;
+    border-color: #fa226375 !important;
+}
+
+.form-control.success input{
+    border-color: #ff477e2c !important;
+}
+
+.form-control.error input{
+    border-color: #df3434;
+}
+
+.form-control i {
+    position: absolute;
+    right: 12px;
+    top: 40px;
+    visibility: hidden;
+}
+
+.form-control.error small{
+    visibility: visible;
+}
+
+.form-control small{
+    color: #df3434;
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.success i.fa-check-circle{
+    color: #147a3f;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle{
+    color: #df3434;
+    visibility: visible;
+}
+
+.form .btn{
+    background-color: #ff477e2c !important;
+
+    background: #b25dda;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    display: block;
+    font-size: 16px;
+    padding: 15px 0;
+    margin-top: 15px;
+    width: 100%;
+    color: black !important;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.form .btn:hover{
+    /* background: #c59cd8; */
+    background-color: #b36a6a !important;
+
+
+}

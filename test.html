@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Details</title>
+  
+  <!-- CSS --><link rel="stylesheet" href="css/test.css">
+			<link rel="stylesheet" href="css/salon-info.css">
+			
+			<!-- add Bootstrap CSS -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+			<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-C3oxXNfNvQcWdM8Zsh5og1i5R5LQL/ElYkYz9LoCpS0xwjvBhx1b8K1ZQ4pu4w4Pv09CtiZf8N6rQ9QZXveW6g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+			<link rel="icon" type="image/x-icon" href="images/logo/favicons.png">
+		
+ 
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="index.html"><img src="images/Logo/logo3.png" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Vendors
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="#">Wedding Venues</a>
+  
+        <a class="dropdown-item" href="#">Photography</a>
+        <a class="dropdown-item" href="#">Catering</a>
+        <a class="dropdown-item" href="#">Invitation Cards</a>
+        <a class="dropdown-item" href="Salons.html">Salons</a>
+        <a class="dropdown-item" href="#">Planner</a>
+        <a class="dropdown-item" href="#">Ideas</a>
+        <a class="dropdown-item" href="#">Dj's</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="About.html">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+      <!-- search icon -->
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="search-icon">
+        <i class="bi bi-search"></i>
+        </a>
+      </li>
+      </ul>
+      <ul class="navbar-nav">
+      <li class="nav-item" >
+        <a  class="nav-link" href="Vendor Signup.html" id="vendor-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="black" d="M19 6h-3V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v1H5a3 3 0 0 0-3 3v9a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3Zm-9-1h4v1h-4Zm10 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-5h4v1a1 1 0 0 0 2 0v-1h4v1a1 1 0 0 0 2 0v-1h4Zm0-7H4V9a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1Z"/></svg>
+     Are you a vendor?</a>
+      </li>
+      <li class="nav-item" >
+        <a class="nav-link" href="Customer signup.html" id="register-button">Register</a>
+      </li>
+      <li class="nav-item" >
+        <a class="nav-link" href="Login.html" id="login-button">Login</a>
+      </li>
+      
+      </ul>
+    </div>
+  </nav>
+
+  <!--Search Bar-->
+<div class="d-flex justify-content-center align-items-center">
+  <div class="col-lg-6 col-md-6 col-sm-1" style="margin-top: 5rem;">
+    <div class="search-bar">
+      <input type="text" placeholder="Search">
+      <input type="date" placeholder="Select date">
+      <select id="city" name="city">
+        <option value="">Select a city</option>
+        <option value="Karachi">Karachi</option>
+        <option value="Lahore">Lahore</option>
+        <option value="Islamabad">Islamabad</option>
+        <option value="Rawalpindi">Rawalpindi</option>
+      </select>
+      <button>Search</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- <button id="booking-btn" class="btn btn-primary">Booking Details</button> -->
+
+<!-- Modal -->
+<!-- <div class="modal fade" id="booking-modal" tabindex="-1" role="dialog" aria-labelledby="booking-modal-label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="booking-modal-label">Booking Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="calendar"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+  $('#booking-btn').click(function() {
+    // Simulating unavailable booking dates
+    var unavailableDates = [
+      '2023-05-20',
+      '2023-05-22',
+      '2023-05-25'
+    ];
+
+    $('#booking-modal').modal('show');
+
+    $('#calendar').fullCalendar({
+      defaultView: 'month',
+      selectable: true,
+      select: function(start, end) {
+        if (unavailableDates.includes(start.format('YYYY-MM-DD'))) {
+          alert('Booking is not available on the selected date: ' + start.format('YYYY-MM-DD'));
+        } else {
+          alert('Booking is available on the selected date: ' + start.format('YYYY-MM-DD'));
+        }
+      },
+      dayRender: function(date, cell) {
+        if (unavailableDates.includes(date.format('YYYY-MM-DD'))) {
+          cell.addClass('fc-unavailable');
+        }
+      }
+    });
+  });
+});
+</script> -->
+
+
+<script src="js/test.js"></script>
+
+
+  
+	  <!-- add jQuery and Bootstrap's JavaScript -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

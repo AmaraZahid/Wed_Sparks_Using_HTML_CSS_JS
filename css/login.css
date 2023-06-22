@@ -1,0 +1,32 @@
+.card {
+  border: none;
+  box-shadow: 0 10 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.btn-outline-primary {
+  border-color:  #b36a6a !important;
+  color:  black !important;
+}
+
+.btn-outline-primary:hover {
+  background-color:  #b36a6a !important;
+  border-color:  #b36a6a !important;
+  color: black;
+}
+
+.btn-primary {
+  background-color: #ff477e2c;
+  border-color:  #b36a6a !important;
+  color: black;
+}
+
+.btn-primary:hover {
+  background-color:  #b36a6a !important;
+  border-color:  #b36a6a !important;
+  color: black
+}

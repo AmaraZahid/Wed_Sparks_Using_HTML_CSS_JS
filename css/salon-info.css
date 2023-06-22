@@ -1,0 +1,347 @@
+
+.navbar {
+    background-color: #fff; /* Change background color */
+    border-bottom: 1px solid #e5e5e5; /* Add border at bottom */
+  border-top: 1px solid #e5e5e5; /* Add border at bottom */
+  }
+  
+  .navbar-brand {
+    height: auto; /* Adjust height of logo */
+    padding: 0 15px; /* Add padding to logo */
+  }
+  
+  .navbar-brand img {
+    height: 40px; /* Set height of logo */
+    width: auto; /* Set width to auto to maintain aspect ratio */
+  }
+  .nav-item a:hover{
+    border-bottom: 3px solid #da2058 !important;
+  }
+  .nav-item a:active{
+    border-bottom: 3px solid #da2058 !important;
+  }
+  .nav-link {
+    color: #333; /* Change link color */
+    font-weight: 500; /* Add font weight to link */
+    padding: 0 15px; /* Add padding to links */
+  }
+  
+  .nav-link:hover {
+    color: #007bff; /* Change link color on hover */
+  }
+  
+  /* Dropdown menu styling */
+  .dropdown-menu {
+    border: none; /* Remove border */
+    border-radius: 0; /* Remove border radius */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.175); /* Add shadow */
+  z-index: 100rem;
+  }
+  
+  .dropdown-item {
+    color: #333; /* Change color */
+    font-weight: 500; /* Add font weight */
+  z-index: 100rem;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f5f5f5; /* Change background color on hover */
+  z-index: 100rem;
+  }
+  
+  /* Right side buttons styling */
+  .navbar-nav:last-child .nav-item {
+    margin-left: 10px; /* Add margin between buttons */
+  }
+  
+  @media (max-width: 991px) {
+    /* Collapse button styling */
+    .navbar-toggler {
+      border: none; /* Remove border */
+      outline: none; /* Remove outline */
+    }
+  
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* Set icon for hamburger button */
+      height: 24px; /* Set height of icon */
+      width: 24px; /* Set width of icon */
+    }
+  }
+  /* search bar
+  /* Style for the city selector */
+  .dropdown-menu {
+    background-color: #f8f9fa;
+    box-shadow: none;
+  }
+  
+  .dropdown-item {
+    color: #212529;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Style for the date selector */
+  
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: #f1f1f1;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .search-bar input[type="text"],
+  .search-bar input[type="date"],
+  .search-bar select {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    width: 100%;
+  }
+  
+  .search-bar button {
+    font-size: 1.2rem;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #ff477e;
+    border-color: #da2058;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;;
+  } 
+  .search-bar button:hover {
+    background-color: #fff;
+    color: #2c3e50;
+    }
+    
+  #city {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    width: 100%;
+  }
+  
+/* image gallery  */
+
+#gallery_info{
+  margin-top: 10px;
+}
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between; 
+  margin-left: 18px;
+  margin-top: 20px;
+}
+
+.gallery-item {
+	width: calc(33.33% - 20px);
+  margin-right: -60px;
+  margin-top: -20px;
+
+}
+
+.gallery-item img {
+	width: 80%;
+	height: 90%;
+	object-fit: cover;
+	cursor: pointer;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/* Information Section */
+/* .container-fluid{
+  padding: 0px;
+} */
+  .info {
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 5px;
+  margin-right:20px;
+  box-shadow: #000;
+  }
+  
+  .info p:first-child {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  }
+  
+  .info p:last-child {
+  font-size: 18px;
+  margin-bottom: 10px;
+  }
+  
+  .info a {
+  color: #000;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  }
+  
+  .info a i {
+  font-size: 24px;
+  margin-right: 10px;
+  }
+  
+  .info a span {
+  font-size: 18px;
+  }
+  
+  .rating {
+  font-size: 24px;
+  margin-top: 10px;
+  }
+  
+  .rating span {
+  color: gold;
+  }
+
+  /* booking details button */
+  #booking-btn {
+    background-color: #ff477e;
+    border-color: #da2058;
+    padding: 8px 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+  }
+
+
+  #booking-btn:hover {
+    background-color: #fff;
+    color: #2c3e50;
+  }
+
+  #calendar .fc-day.fc-unavailable {
+    background-color: red;
+    color: white;
+  }
+  
+  /* buttons */
+  #btns{
+    margin-top: -20px;
+    margin-left: 8px;
+
+  }
+  
+  .btn {
+    margin-right: 10px;
+    border: 2px solid transparent; /* Add border property */
+    transition: border-color 0.3s; /* Add transition for smooth effect */
+  }
+  
+  .btn:hover {
+    border-color: #da2058; /* Change border color on hover */
+  }
+  
+  .section {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  .section h2 {
+    margin-bottom: 10px;
+  }
+  
+  .btn.active {
+    background-color: #da2058;
+    color: white;
+    border: none;
+  }
+  line */
+
+
+  .hr-responsive {
+ 
+    height: 30px;
+    background-color: rgb(111, 47, 57);
+    margin: 20px 0;
+    width: rem !important;
+  }
+  
+  @media screen and (max-width: 400px) {
+    .hr-responsive {
+      /* margin: 10px 0; */
+    }
+  }
+  
+  /* hr {
+    height: 30px;
+    background-color: rgba(10, 8, 8, 0.078);
+    margin: 20px 0;
+    width: 77rem;
+    
+  }
+   */
+
+
+
+
+  /* Footer */
+.footer {
+    /* height: 60px; */
+    font-size: 16px;
+    line-height: 1;
+  ;
+    background-color: #ff477e;
+    }
+  
+  
+  .footer img {
+    /* height: 80px; */
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .footer img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  
+  .social-links .btn {
+    margin-right: 10px;
+  }
+  
+  .social-links .btn:last-child {
+    margin-right: 0;
+  }
+  
+  .social-links .btn i {
+    font-size: 24px;
+  }
+  
+  .footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer ul li a:hover {
+    color: #ccc;
+  }
+  
+  .footer p {
+    font-size: 14px;
+  }
+  
